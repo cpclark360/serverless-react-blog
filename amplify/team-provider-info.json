@@ -1,0 +1,19 @@
+{
+    "windows": {
+        "awscloudformation": {
+            "AuthRoleName": "reactblog-windows-20190531182710-authRole",
+            "UnauthRoleArn": "arn:aws:iam::916718823780:role/reactblog-windows-20190531182710-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::916718823780:role/reactblog-windows-20190531182710-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "reactblog-windows-20190531182710-deployment",
+            "UnauthRoleName": "reactblog-windows-20190531182710-unauthRole",
+            "StackName": "reactblog-windows-20190531182710",
+            "StackId": "arn:aws:cloudformation:us-east-1:916718823780:stack/reactblog-windows-20190531182710/15e92f90-8404-11e9-b0d8-0af7a73fd784"
+        },
+        "categories": {
+            "auth": {
+                "cognitoff5607f2": {}
+            }
+        }
+    }
+}

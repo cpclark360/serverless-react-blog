@@ -1,0 +1,67 @@
+{
+    "identityPoolName": "reactblog_identitypool_30383473",
+    "allowUnauthenticatedIdentities": true,
+    "lambdaLogPolicy": "reactb_30383473_lambda_log_policy",
+    "openIdLambdaRoleName": "reactb_30383473_openid_lambda_role",
+    "openIdRolePolicy": "reactb_30383473_openid_pass_role_policy",
+    "openIdLambdaIAMPolicy": "reactb_30383473_openid_lambda_iam_policy",
+    "openIdLogPolicy": "reactb_30383473_openid_lambda_log_policy",
+    "userPoolName": "reactblog_userpool_30383473",
+    "autoVerifiedAttributes": [
+        "email"
+    ],
+    "mfaConfiguration": "OFF",
+    "mfaTypes": [
+        "SMS Text Message"
+    ],
+    "roleName": "reactb30383473_sns-role",
+    "roleExternalId": "reactb30383473_role_external_id",
+    "policyName": "reactb30383473-sns-policy",
+    "smsAuthenticationMessage": "Your authentication code is {####}",
+    "smsVerificationMessage": "Your verification code is {####}",
+    "emailVerificationSubject": "Your verification code",
+    "emailVerificationMessage": "Your verification code is {####}",
+    "defaultPasswordPolicy": false,
+    "passwordPolicyMinLength": 8,
+    "passwordPolicyCharacters": [],
+    "requiredAttributes": [
+        "email"
+    ],
+    "userpoolClientName": "reactb30383473_app_client",
+    "userpoolClientGenerateSecret": true,
+    "userpoolClientRefreshTokenValidity": 30,
+    "userpoolClientWriteAttributes": [
+        "email"
+    ],
+    "userpoolClientReadAttributes": [
+        "email"
+    ],
+    "mfaLambdaRole": "reactb30383473_totp_lambda_role",
+    "mfaLambdaLogPolicy": "reactb30383473_totp_lambda_log_policy",
+    "mfaPassRolePolicy": "reactb30383473_totp_pass_role_policy",
+    "mfaLambdaIAMPolicy": "reactb30383473_totp_lambda_iam_policy",
+    "userpoolClientLambdaRole": "reactb30383473_userpoolclient_lambda_role",
+    "userpoolClientLogPolicy": "reactb30383473_userpoolclient_lambda_log_policy",
+    "userpoolClientLambdaPolicy": "reactb30383473_userpoolclient_lambda_iam_policy",
+    "userpoolClientSetAttributes": false,
+    "authSelections": "identityPoolAndUserPool",
+    "resourceName": "cognitoff5607f2",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    },
+    "unauthRoleArn": {
+        "Fn::GetAtt": [
+            "UnauthRole",
+            "Arn"
+        ]
+    }
+}
